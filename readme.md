@@ -1,49 +1,51 @@
 # 这是一个README文件
 ### 包含了一些简单算法和注意事项，该项目由个人维护。
-## 仓库仍然在建设当中……
+### 仓库仍然在建设当中……
 
 <details>
-  <summary><h1>🚀 图  例</summary>
+  <summary><b><font size="5">🚀 图  例</font></summary>
 
-  💡 新点子
+  #### 💡 新点子
 
-  📅 日程表
+  #### 📅 日程表
 
-  🛠️ 配置项
+  #### 🛠️ 配置项
 
-  ✅ 已完成 
+  #### ✅ 已完成 
 
-  ❌ 未完成
+  #### ❌ 未完成
 
-  ⚠️ 待改动
+  #### ⚠️ 待改动
 
 </details>
- 
+</br>
 <details>
-  <summary><h1>📅TODO List</summary>
+  <summary><b><font size="5">📅 TODO List</font></summary>
 
-  ✅ 缓冲区问题
+  #### ✅ 缓冲区问题
 
-  ❌ 约瑟夫问题
+  #### ❌ 约瑟夫问题
 
-  ❌ 字串KMP算法
+  #### ❌ 字串KMP算法
 
-  ❌ 查找算法
+  #### ❌ 查找算法
 
-  ❌ 排序算法
+  #### ❌ 排序算法
 
-  ❌ 树与图的基础实现
+  #### ❌ 树与图的基础实现
 
-  ❌ 动态规划
+  #### ❌ 动态规划
 
-  ❌ 高精度算法
+  #### ❌ 高精度算法
 
 </details>
+</br>
+<details>
+<summary><b><font size="5">📌 算法</font></summary>
 
 <details>
-<summary><h1>📌算法</summary>
+<summary><b><font size="4">排序</font></summary>
 
-## 排序
 ### 选择排序
 * 输入:数组名称(也就是数组首地址)、数组中元素个数
 ```c
@@ -231,89 +233,131 @@ for (h=n-1; h>0; h=k) /*循环到没有比较范围*/
 
 ```
 * 注意比较和交换的都是a[j]
-## 查找
-### 二分查找
-### 
+* 
+</details>
 
-## 高精度算法
-![alt text](image.png)
-* C/C++用字符数组/字符串模拟，大数组尽量不要动态分配，尽量定义为全局静态数组。
-* 字符数组占用空间小，整型数组为cahr的4倍。字符数组读入数据方便，scanf或gets计科，整型数组要用%1d逐个读取，存入整型数组每个元素当中。
-  ![alt text](image-2.png)
+<details>
+<summary><b><font size="4">查找</font></summary>
 
-* 全局变量在编译的时候会自动初始化为0，局部变量不可以省略初始化。因此全局静态数组不需要初始化为0。
-* 大数组（大于1w）不能定义在函数内部，可能会栈溢出。局部变量栈空间小。
-* 1MB--25w的数组
-* Py/Java可直接计算
-* 蓝桥杯为单组数据。
-* 1. 数据对齐：正数个位对其，实数小数点对齐。字符串反转
-* 2. 字符串转换
- ![alt text](image-3.png)
-* 3. 非有效数据置零（读入前进行）
+<details>
+<summary><b><font size="2">二分查找</font></summary>
+
 ```c
-a[i]=0; 
-a[i]='\0';
-memset(s,0,sizeof(a));
+//
 ```
-  ## 加法
 
-   ![alt text](image-4.png)
-   ![alt text](image-5.png)
-   输出（注意i>0，使得0能正常输出）
-   ![alt text](image-6.png)
+</details>
 
-   ### c++实现1
-   ![alt text](image-8.png)
-   ### c++实现2
-   ![alt text](image-9.png)
-   ### c实现
-   ![alt text](image-7.png)
+</details>
 
-   ## 减法
-   ![alt text](image-10.png)
 
-   ## 乘法
-   ![alt text](image-11.png)
-   ![alt text](image-12.png)
-   ![alt text](image-13.png)
+<details>
+  <summary><b><font size="4">高精度算法</font></summary>
 
-   ## 除法
-   * 高精度/单精度
-   * 单精度/高精度
-   * 计算方法：以字符串接受高精度，转换为数字后储存在字符数组中，从高位到低位处理，模拟除法计算。
-   ![alt text](image-16.png)
-## 约瑟夫问题
+  ![alt text](image.png)
+  * C/C++用字符数组/字符串模拟，大数组尽量不要动态分配，尽量定义为全局静态数组。
+  * 字符数组占用空间小，整型数组为cahr的4倍。字符数组读入数据方便，scanf或gets计科，整型数组要用%1d逐个读取，存入整型数组每个元素当中。
+    ![alt text](image-2.png)
 
-## 子串问题KMP算法
+  * 全局变量在编译的时候会自动初始化为0，局部变量不可以省略初始化。因此全局静态数组不需要初始化为0。
+  * 大数组（大于1w）不能定义在函数内部，可能会栈溢出。局部变量栈空间小。
+  * 1MB--25w的数组
+  * Py/Java可直接计算
+  * 蓝桥杯为单组数据。
+  * 1. 数据对齐：正数个位对其，实数小数点对齐。字符串反转
+  * 2. 字符串转换
+  ![alt text](image-3.png)
+  * 3. 非有效数据置零（读入前进行）
+  ```c
+  a[i]=0; 
+  a[i]='\0';
+  memset(s,0,sizeof(a));
+  ```
+    ## 加法
+
+    ![alt text](image-4.png)
+    ![alt text](image-5.png)
+    输出（注意i>0，使得0能正常输出）
+    ![alt text](image-6.png)
+
+    ### c++实现1
+    ![alt text](image-8.png)
+    ### c++实现2
+    ![alt text](image-9.png)
+    ### c实现
+    ![alt text](image-7.png)
+
+    ## 减法
+    ![alt text](image-10.png)
+
+    ## 乘法
+    ![alt text](image-11.png)
+    ![alt text](image-12.png)
+    ![alt text](image-13.png)
+
+    ## 除法
+    * 高精度/单精度
+    * 单精度/高精度
+    
+    计算方法：以字符串接受高精度，转换为数字后储存在字符数组中，从高位到低位处理，模拟除法计算。
+    ![alt text](image-16.png)
+
+</details>
+
+<details>
+
+<summary><b><font size="4">约瑟夫问题</font></summary>
+
+
+</details>
+
+<details>
+<summary><b><font size="4">子串问题KMP算法</font></summary>
 
 
 </details>
 
 
-
-
-
-
 <details>
-<summary><h1>⚠️注意事项</summary>
+<summary><b><font size="4">变钱问题</font></summary>
 
-## 1. 对于for循环中的i，要防止大于字符串长度，如：
-``c
+  ### 对于两个互质正整数$N$和$M$，最大的无法表示为 $nN + mM$（其中 $n, m \ge 0$）的整数被称为 Frobenius 数，记作 $g(N, M)$。
+
+  ### $g(N, M) = NM - N - M$
+
+</details>
+
+</details>
+
+</br>
+<details>
+<summary><b><font size="5">⚠️ 注意事项</font></summary>
+
+## for循环中的i不大于字符串长度
+```c
 for (int i = 0; i < k && i < len; i++) {
    ;
 }
-``
-# 2. 缓冲区问题
-* scanf()后换行符 (\n) 依然留在输入缓冲区里，会影响后续字符读取，必须清空缓冲区
-  ```c
-  while(getchar()!='\n');
-  //
-  getchar();
-  ```
-# 3. 凯撒密码（循环问题）：
-* a[i] = (a[i] - 'A' + 2) % 26 + 'A';
+```
 
-# 4. 求数字的首位
+  <details>
+
+  <summary><b><font size="3">缓冲区问题</font></summary>
+
+  * scanf()后换行符 (\n) 依然留在输入缓冲区里，会影响后续字符读取，必须清空缓冲区
+    ```c
+    while(getchar()!='\n');
+    //
+    getchar();
+    ```
+
+  </details>
+  
+## 凯撒密码（循环问题）
+```c
+a[i] = (a[i] - 'A' + 2) % 26 + 'A';
+```
+## 求数字的首位
 * 字符串指针法：
   ```c
   char * p=str// 定义指针指向数组首地址,*p 即为第一个字符（最高位数字）
@@ -322,8 +366,10 @@ for (int i = 0; i < k && i < len; i++) {
   ```c
     while (n >= 10) { n /= 10; }
   ```
-# 5. 哈希数组（通常是一个大小为 256 的 int 或 bool 数组）
+
+## 哈希数组
   ``` c
+  //通常是一个大小为 256 的 int 或 bool 数组
   int flag[256]={0};
   for(int i=0;a[i]!='\0';i++){
           if(flag[(int)a[i]]==0){
@@ -332,7 +378,10 @@ for (int i = 0; i < k && i < len; i++) {
           }
     }
   ```
-# 6. 去除fgets读取字符串末尾的换行符方法
+
+<details>
+<summary><b><font size="5">去除fgets读取字符串末尾的换行符</font></summary>
+
 ## 使用string.h中的strcspn()
   ```c
       char str[20];
@@ -378,6 +427,8 @@ for (int i = 0; i < k && i < len; i++) {
   }
   ```
 
+</details>
+
 ## sizeof
 * 实际上是一个运算符，而不是一个函数，在特定情况下，不需要括号。
 * 对变量或常量（即表达式）使用 sizeof 时，括号是可选的。
@@ -390,55 +441,65 @@ for (int i = 0; i < k && i < len; i++) {
 * 初始化从0开始，否则可能越界。
 ## NULL野指针
 * 不指向任何有效的内存地址，不可进行操作，应该定义两个普通的整数变量（如 m, n），然后通过取地址符 & 将它们的地址传递给指针参数。
-## 字符串计算问题
-* char-'0'为字符char对应的数字
-  ```c
-  for (int i = 0; a[i] != '\0'; i++) {
-              if (isdigit(a[i])) {
-                  // 核心计算逻辑：将字符转换为对应的数值并累加
-                  res = res * 10 + (a[i] - '0');
-                  found = 1;
-              }
-          }
-  //
-  for(int i=strlen(a)-1;i>=0;i--){
-          if(isdigit(a[i])){
-              res+=n*(a[i]-'0');
-              n*=10;
-          }
+  
+<details><summary><b><font size="5">字符串问题</font></summary>
+
+  ## 字符串计算问题
+  * char-'0'为字符char对应的数字
+    ```c
+    for (int i = 0; a[i] != '\0'; i++) {
+                if (isdigit(a[i])) {
+                    // 核心计算逻辑：将字符转换为对应的数值并累加
+                    res = res * 10 + (a[i] - '0');
+                    found = 1;
+                }
+            }
+    //
+    for(int i=strlen(a)-1;i>=0;i--){
+            if(isdigit(a[i])){
+                res+=n*(a[i]-'0');
+                n*=10;
+            }
+        }
+    ```
+  ## 回文串问题
+  * 一旦不匹配应立即跳出
+    ```c
+      while (i < j) {
+      // 如果不匹配（忽略大小写）
+      if (toupper((unsigned char)s[i]) != toupper((unsigned char)s[j])) {
+        flag = 0;
+        break; // 发现不匹配，直接退出循环
       }
-  ```
-## 8. 回文串问题
-* 一旦不匹配应立即跳出
-  ```c
-    while (i < j) {
-    // 如果不匹配（忽略大小写）
-    if (toupper((unsigned char)s[i]) != toupper((unsigned char)s[j])) {
-      flag = 0;
-      break; // 发现不匹配，直接退出循环
+        i++;
+        j--;
+      }
+    ```
+  ## 数字镜像变换
+  * 0-9，2-8，2-7……
+    ```c
+    if (isdigit(a)) {
+        putchar('9' - (a - '0'));// 如 a='1', 则 '9' - (49-48) = '9' - 1 = '8'
+    } else {
+        putchar(a);// 原样输出非数字字符（包括空格和换行符）
     }
-      i++;
-      j--;
-    }
-  ```
-## 9. 数字镜像变换
-* 0-9，2-8，2-7……
-  ```c
-  if (isdigit(a)) {
-      putchar('9' - (a - '0'));// 如 a='1', 则 '9' - (49-48) = '9' - 1 = '8'
-  } else {
-      putchar(a);// 原样输出非数字字符（包括空格和换行符）
-  }
-  ```
-##  10. while(scanf("%c",&a)!=EOF)
-* 会读取回车，回车字符影响下面的判断
-* while(scanf(" %c", &a) != EOF)会自动跳过所有空白字符
-## 11. 局部排序
+    ```
+
+   </details>
+
+```c
+while(scanf("%c",&a)!=EOF)
+//会读取回车，回车字符影响下面的判断
+while(scanf(" %c", &a) != EOF)会自动跳过所有空白字符
+```
+## 局部排序
 * 内层循环变，外层循环不变
-## 12. 动态内存分配
-* int *a = (int *)malloc(n * sizeof(int));
-* 别忘了free(a);
-## 13. 元素移动问题
+## 动态内存分配
+```c
+int *a = (int *)malloc(n * sizeof(int));
+//别忘了free(a);
+```
+## 元素移动问题
   * 后n个元素移动到前n个
     ```c
       int temp[10]; // 辅助数组
@@ -468,15 +529,18 @@ for (int i = 0; i < k && i < len; i++) {
 
 
 ## 负数取余计算
-* 123%(-10)=-13
-* 按正数计算，结果加负号
+```c
+123%(-10)=-13
+//按正数计算，结果加负号
+```
   
-# ASCII码
-数字0--48
+## ASCII码
+```数字0--48
 数字1--49
 数字2--50
 a--
 z--
 A--
 Z--
+```
 </details>
